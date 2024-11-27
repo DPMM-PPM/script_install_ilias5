@@ -25,11 +25,17 @@ tar_file="ILIAS-5.3.8.tar.gz"
 destination_dir="/var/www/html/ilias"
 dataout_dir="/var/www/dataout"
 error_dir="$dataout_dir/error"
+ilias_ini_file="ilias.ini.php"
+client_ini_file="client.ini.php"
 
-# Vérifier si le fichier tar.gz existe
+# Vérifier si le fichier tar.gz existe, sinon le télécharger
 if [ ! -f "$tar_file" ]; then
-  echo "Le fichier $tar_file n'existe pas."
-  exit 1
+  echo "Le fichier $tar_file n'existe pas. Téléchargement en cours..."
+  wget https://github.com/ILIAS-eLearning/ILIAS/archive/v5.3.8.tar.gz -O $tar_file
+  if [ $? -ne 0 ]; then
+    echo "Échec du téléchargement du fichier $tar_file."
+    exit 1
+  fi
 fi
 
 # Demander le nom du client ILIAS
