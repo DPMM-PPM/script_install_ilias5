@@ -3,7 +3,7 @@
 start = "./login.php"
 
 [client]
-name = "nom_client"
+name = "eformarine"
 description = ""
 access = "1"
 

@@ -9,7 +9,7 @@ timezone = "Europe/Paris"
 path = "data"
 inifile = "client.ini.php"
 datadir = "externe_path"
-default = "default_client"
+default = "eformarine"
 list = "0"
 
 [setup]
