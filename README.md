@@ -25,9 +25,13 @@ Ce dépôt contient une série de scripts Bash pour automatiser l'installation d
    ```bash
    git clone https://github.com/vincent-sayah/script_install_ilias5.git
    cd script_install_ilias5
+   ```
+  
 
 2. **Rendre les scripts exécutables** :
-chmod +x *.sh
+   ```bash
+   chmod +x *.sh
+   ```
 
 3. **Exécuter les scripts dans l'ordre en tant que sudo** :
 
@@ -45,27 +49,48 @@ sudo bash install_ilias.sh
 
 Détails des scripts
 1. install_software.sh
+   ```bash
+   sudo ./install_software.sh
+   ```
 Installe les logiciels nécessaires pour faire fonctionner ILIAS, y compris Apache, PHP 7.1, MariaDB, Ghostscript, OpenJDK 8, ImageMagick, zip, unzip, Node.js, APCu, et lessc.
 
 2. secure_mariadb.sh
+   ```bash
+   sudo ./secure_mariadb.sh
+   ```
 Sécurise l'installation de MariaDB en configurant le mot de passe root, en supprimant les utilisateurs anonymes, en désactivant l'accès root à distance, en supprimant les bases de données de test, et en rechargeant les tables de privilèges.
 
 3. configure_mariadb.sh
+```bash
+   sudo ./configure_mariadb.sh
+   ```
 Configure les paramètres query_cache_size et innodb_buffer_pool_size de MariaDB pour optimiser les performances.
 
 4. configure_php.sh
 Configure les paramètres PHP tels que max_execution_time, memory_limit, upload_max_filesize, etc.
 
 5. install_apcu.sh
+```bash
+   sudo ./configure_php.sh
+   ```
 Installe et configure APCu pour PHP 7.1.
 
 6. configure_apache.sh
+```bash
+   sudo ./configure_apache.sh
+   ```
 Configure le répertoire root du site, le ServerName, et crée un Virtual Host nommé eformarine.conf.
 
 7. create_database.sh
+```bash
+   sudo ./create_database.sh
+   ```
 Crée la base de données et l'utilisateur MariaDB, et configure les fichiers ilias.ini.php et client.ini.php.
 
-8. install_ilias.sh
+8. install_ilias5.sh
+```bash
+   sudo ./install_ilias5.sh
+   ```
 Télécharge, extrait, et configure ILIAS 5.3.8. Si le fichier ILIAS-5.3.8.tar.gz n'est pas présent dans le répertoire, il sera téléchargé automatiquement.
 
 Informations finales
