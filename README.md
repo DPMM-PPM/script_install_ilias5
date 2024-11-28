@@ -103,6 +103,7 @@ Déplacez le répertoire data dans /var/www/html/ilias.
 Copiez le fichier client.ini.php dans /var/www/html/ilias/data/<nom du client>.
 Copiez le contenu du répertoire externe dans /var/www/dataout.
 Faites un chown -R www-data:www-data sur les répertoires dataout et ilias.
+
 Si vous n'avez pas effectué une importation de base de données :
 
 Vous êtes en train de créer un client ILIAS vide.
