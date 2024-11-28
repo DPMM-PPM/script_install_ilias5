@@ -96,7 +96,8 @@ Crée la base de données et l'utilisateur MariaDB, et configure les fichiers il
    ```
 Télécharge, extrait, et configure ILIAS 5.3.8. Si le fichier ILIAS-5.3.8.tar.gz n'est pas présent dans le répertoire, il sera téléchargé automatiquement.
 
-Informations finales
+Informations finales :
+
 À ce stade, ILIAS 5.3 est installé.
 
 Si vous avez effectué une importation d'une base de données :
