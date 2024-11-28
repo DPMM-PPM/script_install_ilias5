@@ -36,16 +36,16 @@ Ce dépôt contient une série de scripts Bash pour automatiser l'installation d
 3. **Exécuter les scripts dans l'ordre en tant que sudo** :
 
 Chaque script demande une confirmation de l'utilisateur avant de procéder. Assurez-vous de lire les messages affichés par chaque script et de suivre les instructions.
-Exécutez les scripts dans l'ordre suivant 
+Exécutez les scripts dans l'ordre suivant :
 
-sudo bash install_software.sh
-sudo bash secure_mariadb.sh
-sudo bash configure_mariadb.sh
-sudo bash configure_php.sh
-sudo bash install_apcu.sh
-sudo bash configure_apache.sh
-sudo bash create_database.sh
-sudo bash install_ilias.sh
+sudo  1_install_software.sh
+sudo  2_secure_mariadb.sh
+sudo  3_configure_mariadb.sh
+sudo  4_configure_php.sh
+sudo  5_install_apcu.sh
+sudo  6_configure_apache.sh
+sudo  7_create_database.sh
+sudo  8_install_ilias.sh
 
 Détails des scripts
 1. install_software.sh
@@ -96,7 +96,8 @@ Crée la base de données et l'utilisateur MariaDB, et configure les fichiers il
    ```
 Télécharge, extrait, et configure ILIAS 5.3.8. Si le fichier ILIAS-5.3.8.tar.gz n'est pas présent dans le répertoire, il sera téléchargé automatiquement.
 
-Informations finales
+Informations finales :
+
 À ce stade, ILIAS 5.3 est installé.
 
 Si vous avez effectué une importation d'une base de données :
