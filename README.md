@@ -67,11 +67,14 @@ Sécurise l'installation de MariaDB en configurant le mot de passe root, en supp
 Configure les paramètres query_cache_size et innodb_buffer_pool_size de MariaDB pour optimiser les performances.
 
 4. configure_php.sh
-Configure les paramètres PHP tels que max_execution_time, memory_limit, upload_max_filesize, etc.
-
-5. install_apcu.sh
 ```bash
    sudo ./configure_php.sh
+   ```
+Configure les paramètres PHP tels que max_execution_time, memory_limit, upload_max_filesize, etc.
+
+6. install_apcu.sh
+```bash
+   sudo ./configure_apcu.sh
    ```
 Installe et configure APCu pour PHP 7.1.
 
