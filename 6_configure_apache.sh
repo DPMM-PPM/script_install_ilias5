@@ -66,7 +66,7 @@ sudo systemctl reload apache2
 sudo systemctl restart apache2
 
 # Configurer le fichier ilias.ini.php
-ilias_ini_file="/opt/ilias.ini.php"
+ilias_ini_file="ilias.ini.php"
 
 # Remplacer les valeurs de http_path et absolute_path dans ilias.ini.php
 sudo sed -i "s#^http_path =.*#http_path = \"http://$server_name\"#" "$ilias_ini_file"
