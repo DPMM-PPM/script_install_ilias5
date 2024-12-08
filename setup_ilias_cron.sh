@@ -32,6 +32,7 @@ log_file="/var/www/dataout/LogCron/ilias_cron.log"
 
 # Créer le répertoire LogCron
 sudo mkdir -p /var/www/dataout/LogCron
+sudo chown -R /var/www/dataout/LogCron
 
 # Créer le fichier cron
 #sudo bash -c "cat > $cron_file" <<EOF
