@@ -16,6 +16,7 @@ echo "- unzip"
 echo "- Node.js"
 echo "- APCu"
 echo "- lessc"
+echo "- phantomjs"
 
 # Demander la confirmation de l'utilisateur
 read -p "Veuillez entrer 'ok' pour continuer : " confirmation
@@ -69,20 +70,15 @@ sudo apt install -y nodejs
 sudo apt install -y node-less
 
 # Installer PhantomJS à partir du fichier tar
-#sudo tar -xvf /opt/phantomjs-2.1.1-linux-x86_64.tar -C /opt
-#sudo mv /opt/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/bin/
+sudo apt-get install build-essential chrpath libssl-dev libxft-dev
+sudo apt-get install libfreetype6 libfreetype6-dev
+sudo apt-get install libfontconfig1 libfontconfig1-dev
+sudo tar xvjf phantomjs-1.9.8-linux-x86_64.tar.bz2
+sudo mv phantomjs-1.9.8-linux-x86_64 /usr/local/share
+sudo ln -sf /usr/local/share/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/local/bin
 
 # Vérifier l'installation de PhantomJS
-#phantomjs -v
-
-#./phantomjs-2.1.1-linux-x86_64/bin/phantomjs 
-#Auto configuration failed
-#136708060555200:error:25066067:DSO support routines:DLFCN_LOAD:could not load the shared library:dso_dlfcn.c:185:filename(libproviders.so): libproviders.so: cannot open shared object file: No such file or directory
-#136708060555200:error:25070067:DSO support routines:DSO_load:could not load the shared library:dso_lib.c:244:
-#136708060555200:error:0E07506E:configuration file routines:MODULE_LOAD_DSO:error loading dso:conf_mod.c:285:module=providers, path=providers
-#136708060555200:error:0E076071:configuration file routines:MODULE_RUN:unknown module name:conf_mod.c:222:module=providers
-
-
+phantomjs -v
 
 # Redémarrer service Apache
 sudo systemctl restart apache2

@@ -13,7 +13,7 @@ default = "eformarine"
 list = "0"
 
 [setup]
-pass = "md5_setup_pass"
+pass = "dfa8327f5bfa4c672a04f9b38e348a70"
 
 [tools]
 convert = "/usr/bin/convert"
@@ -28,7 +28,7 @@ scancommand = ""
 cleancommand = ""
 enable_system_styles_management = "1"
 lessc = "lessc"
-phantomjs = ""
+phantomjs = "/usr/local/bin/phantomjs"
 
 [log]
 path = "/var/www/dataout"
