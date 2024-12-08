@@ -39,14 +39,14 @@ Ce dépôt contient une série de scripts Bash pour automatiser l'installation d
 Chaque script demande une confirmation de l'utilisateur avant de procéder. Assurez-vous de lire les messages affichés par chaque script et de suivre les instructions.
 Exécutez les scripts dans l'ordre suivant :
 
-sudo  1_install_software.sh
-sudo  2_secure_mariadb.sh
-sudo  3_configure_mariadb.sh
-sudo  4_configure_php.sh
-sudo  5_install_apcu.sh
-sudo  6_configure_apache.sh
-sudo  7_create_database.sh
-sudo  8_install_ilias.sh
+- sudo  1_install_software.sh
+- sudo  2_secure_mariadb.sh
+- sudo  3_configure_mariadb.sh
+- sudo  4_configure_php.sh
+- sudo  5_install_apcu.sh
+- sudo  6_configure_apache.sh
+- sudo  7_create_database.sh
+- sudo  8_install_ilias.sh
 
 Détails des scripts
 1. install_software.sh
@@ -103,13 +103,13 @@ Informations finales :
 
 Si vous avez effectué une importation d'une base de données :
 
-Copiez ilias.ini.php dans /var/www/html/ilias.
-Déplacez le répertoire data dans /var/www/html/ilias.
-Copiez le fichier client.ini.php dans /var/www/html/ilias/data/<nom du client>.
-Copiez le contenu du répertoire externe dans /var/www/dataout.
-Faites un chown -R www-data:www-data sur les répertoires dataout et ilias.
+- Copiez ilias.ini.php dans /var/www/html/ilias.
+- Déplacez le répertoire data dans /var/www/html/ilias.
+- Copiez le fichier client.ini.php dans /var/www/html/ilias/data/<nom du client>.
+- Copiez le contenu du répertoire externe dans /var/www/dataout.
+- Faites un chown -R www-data:www-data sur les répertoires dataout et ilias.
 
 Si vous n'avez pas effectué une importation de base de données :
 
 Vous êtes en train de créer un client ILIAS vide.
-Connectez-vous via votre navigateur à l'adresse http://<nom_server_name> et suivez les étapes indiquées.
+- Connectez-vous via votre navigateur à l'adresse http://<nom_server_name> et suivez les étapes indiquées.
