@@ -53,12 +53,12 @@ sudo chown -R www-data:www-data /var/www/dataout/LogRPC
 java -Dfile.encoding=UTF-8 -jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.ini start
 
 # Voir le status du serveur
-java -jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.ini status &
+java -jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.ini status 
 
 # Demander à l'utilisateur s'il veut lancer une indexation
 read -p "Voulez-vous lancer une indexation ? (oui/non) : " indexation
 if [ "$indexation" == "oui" ]; then
-  java -jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.ini createIndex eformarine_0 &
+  java -jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.jar /var/www/html/ilias/Services/WebServices/RPC/lib/ilServer.ini createIndex eformarine_0 
 fi
 
 

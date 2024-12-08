@@ -10,9 +10,9 @@ access = "1"
 [db]
 type = "innodb"
 host = "localhost"
-user = "user"
-pass = "pass"
-name = "bdd_name"
+user = "ilias"
+pass = "sayah"
+name = "ilias5"
 port = "3306"
 
 [auth]

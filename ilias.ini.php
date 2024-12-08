@@ -1,14 +1,14 @@
 ; <?php exit; ?>
 [server]
-http_path = "http://path"
-absolute_path = "absolute_path"
+http_path = "http://localhost"
+absolute_path = "/var/www/html/ilias"
 presetting = ""
 timezone = "Europe/Paris"
 
 [clients]
 path = "data"
 inifile = "client.ini.php"
-datadir = "externe_path"
+datadir = "/var/www/dataout"
 default = "eformarine"
 list = "0"
 
