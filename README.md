@@ -7,6 +7,7 @@ Ce dépôt contient une série de scripts Bash pour automatiser l'installation d
 - Un serveur Ubuntu 22.04 LTS fraîchement installé.
 - Accès root ou sudo.
 - Connexion Internet pour télécharger les paquets nécessaires.
+- Une connexion ftp pour uploader sur le server les données à migrer (racine web, données externe, bdd)
 
 ## Scripts
 
