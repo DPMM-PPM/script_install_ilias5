@@ -96,4 +96,5 @@ sudo /etc/init.d/ilserver status
 # Afficher le message d'information
 echo "- La création du service ilserver est terminé" 
 echo "- Dans le menu administration/recherche contrôler la date de la derniere génération d'index"
+echo "- Si besoin parametrer le serveur java dans Administration/général/server/server java"
 echo "- Si besoin lancer une indextion lucene via le menu administration/paramètres généraux/tâches Cron"
