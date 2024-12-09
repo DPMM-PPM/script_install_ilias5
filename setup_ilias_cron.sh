@@ -34,16 +34,6 @@ log_file="/var/www/dataout/LogCron/ilias_cron.log"
 sudo mkdir -p /var/www/dataout/LogCron
 sudo chown -R www-data:www-data /var/www/dataout/LogCron
 
-# Créer le fichier cron
-#sudo bash -c "cat > $cron_file" <<EOF
-# Exécuter le script PHP tous les jours à 02h00 du matin
-#* * * * * www-data php $php_script $cron_user $cron_password $client_id  >> $log_file 2>&1
-#EOF
-
-
-
-
-
 
 # Ajouter la tâche cron pour l'utilisateur www-data
 CRON_COMMAND="0 2 * * * php $php_script $cron_user $cron_password $client_id  >> $log_file 2>&1 EOF"
@@ -54,14 +44,3 @@ echo "Tâche cron ajoutée pour l'utilisateur www-data :"
 sudo crontab -u www-data -l
 
 
-
-
-
-
-
-
-# Définir les permissions appropriées
-sudo chmod 644 $cron_file
-sudo chown root:root $cron_file
-
-echo "Cron job configuré avec succès."
